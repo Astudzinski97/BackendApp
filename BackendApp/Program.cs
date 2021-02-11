@@ -1,4 +1,4 @@
-﻿using Microsoft.Owin.Hosting;
+using Microsoft.Owin.Hosting;
 using System;
 
 namespace BackendApp
@@ -7,6 +7,8 @@ namespace BackendApp
     {
         static void Main(string[] args)
         {
+            EntityFrameworkProfilerBootstrapper.PreStart();
+
             using (WebApp.Start<Startup>("http://localhost:8080"))
             {
                 Console.WriteLine("Web Server is running");
@@ -16,3 +18,4 @@ namespace BackendApp
         }
     }
 }
+
