@@ -167,6 +167,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BasicAuthentication.cs" />
+    <Compile Include="CreateController.cs" />
+    <Compile Include="DeleteController.cs" />
     <Compile Include="EntityFrameworkProfilerBootstrapper.cs" />
     <Compile Include="Person.cs" />
     <Compile Include="Program.cs" />
@@ -180,6 +182,7 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="hibernate.cfg.xml" />
     <Content Include="Person.hbm.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
