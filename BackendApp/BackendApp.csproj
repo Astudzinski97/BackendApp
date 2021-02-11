@@ -176,6 +176,7 @@
     <Compile Include="SearchController.cs" />
     <Compile Include="SearchQuery.cs" />
     <Compile Include="Startup.cs" />
+    <Compile Include="UpdateController.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

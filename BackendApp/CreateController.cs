@@ -22,7 +22,7 @@ namespace BackendApp
                 string query;
                 foreach (Person p in people)
                 {
-                    query = string.Format("Insert INTO Employee (FirstName, LastName, DateOfBirth, JobTitle, CompanyId) VALUES ( {0}, {1}, {2} )", p.FirstName, p.LastName, p.DateOfBirth);
+                    query = string.Format("Insert INTO Person (FirstName, LastName, DateOfBirth) VALUES ( {0}, {1}, {2} )", p.FirstName, p.LastName, p.DateOfBirth);
                     using (var session = sefact.OpenSession())
                     {
                         using (var tx = session.BeginTransaction())
